@@ -25,6 +25,6 @@ defmodule BlockScoutWeb.CSPHeader do
 
   defp websocket_endpoints(conn) do
     host = Conn.get_req_header(conn, "host")
-    "ws://#{host} wss://#{host}"
+    "ws://#{host} wss://blockscout.lacchain.net"
   end
 end
