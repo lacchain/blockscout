@@ -6,7 +6,6 @@
         <%= link to: webapp_url(@conn), class: "footer-brand" do %>
           <%= if logo_footer() do %>
             <img class="footer-logo" src="<%= static_path(@conn, logo_footer()) %>" alt="<%= subnetwork_title() %>" />
-            <img class="footer-logo" src="/images/lac-net.png" alt="LAC-NET" />
         <% end %>
           <%= if logo_text() do %>
             <span class="logo-text in-footer <%= unless logo_footer(), do: "no-logo" %>"> <%= logo_text() %> </span>
@@ -19,7 +18,7 @@
     <% col_size = if Enum.empty?(other_explorers), do: 3, else: 2 %>
 
     <div class="row">
-      <div class="col-xs-12 col-lg-3">
+      <div class="col-xs-12 col-md-4 col-lg-4">
         <p class="footer-info-text"><%= gettext("Blockscout is a tool for inspecting and analyzing EVM based blockchains. Blockchain explorer for Ethereum Networks. LACNet is using the Blockscout tool to provide open dashboards for the LACChain Networks.") %></p>
         <div class="footer-social-icons">
           <a href="https://github.com/LACNetNetworks" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
@@ -33,8 +32,7 @@
           </a>
         </div>
       </div>
-
-      <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+      <div class="col-xs-12 col-md-4 col-lg-4 footer-list">
         <h3>BlockScout</h3>
         <ul>
           <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Submit an Issue") %></a></li>
@@ -46,7 +44,7 @@
           <% end %>
         </ul>
       </div>
-      <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+      <div class="col-xs-12 col-md-4 col-lg-4 footer-list">
         <h3>LAC-NET</h3>
         <ul>
           <li><a href="https://lacnet.lacchain.net/customer-and-support-portal" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Open a ticket ") %></a></li>
