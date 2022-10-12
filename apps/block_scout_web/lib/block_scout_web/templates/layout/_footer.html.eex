@@ -45,12 +45,11 @@
         </ul>
       </div>
       <div class="col-xs-12 col-md-4 col-lg-4 footer-list">
-        <h3>LAC-NET</h3>
+        <h3>LACNet</h3>
         <ul>
           <li><a href="https://lacnet.lacchain.net/customer-and-support-portal" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Open a ticket ") %></a></li>
           <li><a href="https://github.com/LACNetNetworks/besu-networks/issues" rel="noreferrer" class="footer-link"><%= gettext("Submit an issue") %></a></li>
           <li><a href="https://lacnet.lacchain.net/documentation" rel="noreferrer" class="footer-link"><%= gettext("Check documentation") %></a></li>
-          <li><a href="https://lac-net.lacchain.net" rel="noreferrer" class="footer-link"><%= gettext("Customer and Support Portal") %></a></li>
         </ul>
       </div>
 
