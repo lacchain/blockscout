@@ -94,7 +94,7 @@
                   <%= link(
                     gettext("DID Registry"),
                     class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
-                    to: address_path(@conn, :show, did_registry)
+                    to: did_registry
                   ) %>
                   <%= link(
                     gettext("Public Key Directory"),
