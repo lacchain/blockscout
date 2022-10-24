@@ -98,7 +98,7 @@
                   <%= link(
                     gettext("Public Key Directory"),
                     class: "dropdown-item #{tab_status("accounts", @conn.request_path)}",
-                    to: address_path(@conn, :index)
+                    to: address_path(@conn, :show, "0xDF1EbaE3e2318AA57CFaf11E1Dd3531D5A5AdA04")
                   ) %>
                   <%= link(
                     gettext("Credentials Registry"),
