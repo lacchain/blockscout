@@ -1,4 +1,5 @@
 <% apps_menu = Application.get_env(:block_scout_web, :apps_menu) %>
+<% did_registry = Application.get_env(:block_scout_web, :did_registry) %>
 <nav class="navbar navbar-dark navbar-expand-lg navbar-primary" data-selector="navbar" id="top-navbar">
   <div class="container-fluid navbar-container">
     <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
@@ -93,12 +94,12 @@
                   <%= link(
                     gettext("DID Registry"),
                     class: "dropdown-item #{tab_status("tokens", @conn.request_path)}",
-                    to: tokens_path(@conn, :index)
+                    to: address_path(@conn, :show, did_registry)
                   ) %>
                   <%= link(
                     gettext("Public Key Directory"),
                     class: "dropdown-item #{tab_status("accounts", @conn.request_path)}",
-                    to: address_path(@conn, :show, "0xDF1EbaE3e2318AA57CFaf11E1Dd3531D5A5AdA04")
+                    to: "#"
                   ) %>
                   <%= link(
                     gettext("Credentials Registry"),
